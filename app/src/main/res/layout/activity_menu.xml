@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.m2comm.kses2019s_con.modules.customview.CustomView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.m2comm.kses2019s_con.modules.customview.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#071B35"
+        >
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#071B35"
+            android:orientation="horizontal"
+            app:h="41" >
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                android:id="@+id/menu_homeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                app:w="44"
+                app:h="41"
+                app:imgW="40"
+                app:imgH="38"
+                app:img="@drawable/btn_d_home2"
+                />
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                android:id="@+id/menu_homeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                app:w="40"
+                app:h="41"
+                app:fontSize="14"
+                app:fontType="condensed"
+                android:text="HOME"
+                android:textColor="@color/main_color_white"
+                />
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w="210"
+                />
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                android:id="@+id/menu_closeBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:h="41"
+                app:img="@drawable/btn_d_closed2"
+                app:imgH="41"
+                app:imgW="41"
+                app:w="50" />
+
+        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+        <!--Top 하단 선택영역-->
+        <com.m2comm.kses2019s_con.modules.customview.CustomView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#071B35"
+            android:layout_gravity="center"
+            app:h="100"
+            app:w="300">
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomGridView
+                android:id="@+id/menu_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#071B35"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:overScrollMode="never"
+                app:h="100"
+                app:w="300" />
+
+        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:w="360"
+            app:h="440">
+
+            <com.m2comm.kses2019s_con.modules.common.AnimatedExpandableListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:childDivider="@android:color/transparent"
+                android:divider="#F3F3F3"
+                android:dividerHeight="1px"
+                android:groupIndicator="@null"
+                />
+
+        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomView
+            android:id="@+id/boothBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_white"
+            android:gravity="center"
+            app:h="60"
+            app:w="360">
+
+            <HorizontalScrollView
+                android:id="@+id/menu_Hscroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+
+    </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+
+</com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+
+
+
+
+
+

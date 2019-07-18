@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fq"
+            type="com.m2comm.kses2019s_con.views.Question"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.m2comm.kses2019s_con.views.Question">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/voting_edge_radius"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/qa_subText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:h="55">
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/qa_sendtext_radius"
+                    app:h="55">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:textColor="@android:color/white"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+                <Button
+                    android:id="@+id/question_sendBt"
+                    android:layout_width="60dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/qa_sendbutton_radius"
+                    android:text="SEND"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout>
+
+
+            <EditText
+                android:id="@+id/question_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/qa_multytext_radius"
+                android:gravity="top"
+                android:inputType="textAutoCorrect|textMultiLine"
+                android:maxLines="50"
+                android:minLines="6"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

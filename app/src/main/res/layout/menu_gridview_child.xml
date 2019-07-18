@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.m2comm.kses2019s_con.modules.customview.CustomView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    app:h="90"
+    app:w="100"
+    >
+    <com.m2comm.kses2019s_con.modules.customview.CustomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:h="15"/>
+
+    <com.m2comm.kses2019s_con.modules.customview.CustomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cirview"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:w="60"
+        app:h="60">
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+            android:id="@+id/menu_gridview_img"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:w="28"
+            app:h="26"/>
+
+    </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+    <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+        android:layout_marginTop="-5dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/menu_gridview_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:fontType="condensed"
+        android:textColor="@color/main_color_white"
+        app:fontSize="13"/>
+
+</com.m2comm.kses2019s_con.modules.customview.CustomView>

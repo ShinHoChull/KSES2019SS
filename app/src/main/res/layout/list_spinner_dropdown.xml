@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.m2comm.kses2019s_con.modules.customview.CustomView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/main_color_white"
+    app:h="45"
+    >
+
+    <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+        android:id="@+id/spinnerText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:alpha="0.87"
+        android:textColorHint="#1f000000"
+        android:gravity="center"
+        android:layout_weight="1"
+        app:h="45"
+        />
+
+
+</com.m2comm.kses2019s_con.modules.customview.CustomView>

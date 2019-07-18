@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:background="#EDF3FB"
+    android:paddingLeft="60dp">
+
+
+    <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:id="@+id/menu_child_textTitle"
+        android:textColor="#444444"
+        app:fontType="condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontSize="16"
+       />
+
+
+
+
+</LinearLayout>

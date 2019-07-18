@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.m2comm.kses2019s_con.views.ContentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!--*************Top start-->
+        <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+            android:id="@+id/fragment_C_Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:h="50" />
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomWebview
+            android:id="@+id/content_Webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+            android:id="@+id/fragment_Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:h="60" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="event"
+            type="com.m2comm.kses2019s_con.views.EventListActivity" />
+    </data>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.m2comm.kses2019s_con.views.EventListActivity">
+
+        <com.m2comm.kses2019s_con.modules.customview.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E7E7F5"
+            android:orientation="vertical">
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lecture_top"
+                android:orientation="vertical"
+                app:h="255">
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:h="15" />
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                    android:id="@+id/event_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    app:h="20"
+                    app:img="@drawable/list_close"
+                    app:imgDefaultColor="@color/main_color_white"
+                    app:w="20" />
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    app:h="138"
+                    app:img="@drawable/event_logo"
+                    app:w="280" />
+
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:h="30" />
+
+                <!--seletbox -->
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:h="40">
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:w="15" />
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/list_view_borderline"
+                        android:orientation="horizontal"
+                        app:h="40"
+                        app:w="83">
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomSpiner
+                            android:id="@+id/list_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:dropDownWidth="95dp"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            app:h="36"
+                            app:w="120">
+
+                        </com.m2comm.kses2019s_con.modules.customview.CustomSpiner>
+
+
+                        <!--<CustomTextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColor="@color/main_color_black"-->
+                        <!--android:text="전체   ▼"-->
+                        <!--app:fontSize="16"-->
+                        <!--app:fontType="regular"-->
+                        <!--android:gravity="center"-->
+                        <!--app:w="83"-->
+                        <!--app:h="40"-->
+                        <!--/>-->
+
+                    </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:w="5" />
+
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/list_view_borderline"
+                        app:h="40"
+                        app:w="243">
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:w="3" />
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:h="40"
+                            app:img="@drawable/btn_d_search1"
+                            app:imgDefaultColor="@color/main_color_black"
+                            app:w="30" />
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:w="3" />
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:h="40">
+
+                            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:h="1" />
+
+                            <com.m2comm.kses2019s_con.modules.customview.CustomEditText
+                                android:id="@+id/event_editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:background="@color/main_color_white"
+                                android:gravity="center_vertical"
+                                android:hint="행사명을 입력해 주세요"
+                                android:textColor="@color/main_color_black"
+                                android:textColorHint="@color/main_color_black"
+                                app:fontSize="14"
+                                app:fontType="regular"
+                                app:h="37"
+                                app:w="160" />
+
+                            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:h="2" />
+
+                        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+                    </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+                </com.m2comm.kses2019s_con.modules.customview.CustomView>
+                <!--seletbox start-->
+            </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#38495F"
+                app:h="40">
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="행사리스트"
+                    android:textColor="@color/main_color_white"
+                    app:fontSize="17"
+                    app:h="40"
+                    app:w="130" />
+            </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="8" />
+
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="15" />
+
+            <!--학회 추가 하는 영역!! -->
+            <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+                android:id="@+id/list_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="240">
+                <!--2019-->
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:id="@+id/event_2019"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/main_grid_back"
+                    android:orientation="horizontal"
+                    android:elevation="4dp"
+                    app:h="117">
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/event_list_back"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="2019"
+                        android:textColor="@color/main_color_white"
+                        app:fontType="bold"
+                        app:h="70"
+                        app:w="71" />
+
+                    <!--Content-->
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:h="120">
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical"
+                            app:h="120"
+                            app:w="200">
+
+                            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:h="5" />
+
+                            <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="대한견·주관절학회 대한정형외과의사회 합동\n연수강좌"
+                                android:textColor="@color/main_color_black"
+                                app:fontSize="16"
+                                app:fontType="bold"
+                                app:h="56"
+                                app:w="200" />
+
+                            <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="· 신촌세브란스병원 6층 은명대강당\n· 2019.08.18(일)"
+                                android:textColor="#61677B"
+                                app:fontSize="14"
+                                app:fontType="regular"
+                                app:h="60"
+                                app:w="200" />
+
+                        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+                    </com.m2comm.kses2019s_con.modules.customview.CustomView>
+                    <!--Content end-->
+
+                </com.m2comm.kses2019s_con.modules.customview.CustomView>
+                <!--2019 end-->
+
+            </com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout>
+
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="20" />
+
+
+        </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

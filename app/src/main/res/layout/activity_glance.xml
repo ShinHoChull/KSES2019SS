@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="glance"
+            type="com.m2comm.kses2019s_con.views.GlanceActivity" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.PhotoActivity">
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_color_white"
+                    android:orientation="vertical">
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+                        android:id="@+id/fragment_C_Top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_color_navy"
+                        app:h="50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#BF343C55" />
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+                        android:id="@+id/fragment_S_Top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_color_white"
+                        app:h="36" />
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#004960"
+                        app:h="50">
+
+                        <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                            android:id="@+id/glance_select_bt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="2019년 8월 18일(일요일) \n신촌세브란스병원 6층 은명대강당"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="15dp"
+                            app:fontSize="13"
+                            app:fontType="condensed"
+                            app:h="50" />
+
+
+                    </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomWebview
+                        android:id="@+id/glance_wv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+                        android:id="@+id/fragment_Bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:h="60" />
+
+                </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+                <com.m2comm.kses2019s_con.modules.customview.CustomView
+                    android:id="@+id/default_clickV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#BF000000"
+                    android:orientation="vertical"
+                    >
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:h="180"
+                        />
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:img="@drawable/ico_click"
+                        app:imgW="100"
+                        app:imgH="130"
+                        app:h="200"
+                        />
+
+                    <com.m2comm.kses2019s_con.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Touch on a session to check the details.\nUse your fingers to zoom in/out."
+                        app:fontType="condensed"
+                        app:fontSize="16"
+                        app:h="60"
+                        android:gravity="center"
+                        />
+
+                </com.m2comm.kses2019s_con.modules.customview.CustomView>
+
+
+            </com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

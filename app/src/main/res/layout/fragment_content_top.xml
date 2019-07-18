@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="ctop"
+            type="com.m2comm.kses2019s_con.views.ContentTop"/>
+    </data>
+
+    <com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color_darkblack"
+        app:h="50">
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                android:id="@+id/ctop_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="15dp"
+                app:w="200"
+                app:img="@drawable/main_logo"
+                />
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                android:id="@+id/ctop_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="5dp"
+                app:w="50"
+                app:h="50"
+                app:img="@drawable/main_menu"
+                app:imgDefaultColor="@android:color/white"
+                app:imgW="20"
+                app:imgH="20"
+                />
+
+            <com.m2comm.kses2019s_con.modules.customview.CustomImgView
+                android:id="@+id/top_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w="40"
+                app:h="50"
+                android:layout_gravity="right"
+                app:img="@drawable/btn_d_search1"
+                app:imgW="40"
+                app:imgH="40"
+                />
+
+    </com.m2comm.kses2019s_con.modules.customview.CustomFrameLayout>
+
+
+
+
+</layout>

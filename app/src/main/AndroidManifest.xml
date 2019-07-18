@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.m2comm.kses2019s_con">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name="com.m2comm.kses2019s_con.modules.common.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.m2comm.kses2019s_con.views.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="com.m2comm.kses2019s_con.views.MenuActivity"
+            android:theme="@style/Theme.AppCompat.Translucent"/>
+
+        <activity
+            android:name="com.m2comm.kses2019s_con.views.SettingActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>
+
+        <activity android:name="com.m2comm.kses2019s_con.views.PopWebviewActivity"
+            android:theme="@style/Theme.AppCompat.Translucent"/>
+
+        <activity android:name="com.m2comm.kses2019s_con.views.GlanceActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.m2comm.kses2019s_con.modules.common.Download_PDFViewerActivity"
+            android:theme="@style/Theme.AppCompat.Translucent"/>
+
+        <activity
+            android:name="com.m2comm.kses2019s_con.modules.common.ServiceAlertActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <activity
+            android:name="com.m2comm.kses2019s_con.views.EventListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.m2comm.kses2019s_con.views.ContentsActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="com.m2comm.kses2019s_con.views.Lecture"
+            android:theme="@style/Theme.AppCompat.Translucent">
+        </activity>
+
+        <activity
+            android:name="com.m2comm.kses2019s_con.views.QuestionActivity"
+            android:theme="@style/Theme.AppCompat.Translucent">
+
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name="com.m2comm.kses2019s_con.modules.common.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.m2comm.kses2019s_con.modules.common.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.m2comm.kses2019s_con.modules.common.AlarmReceive" />
+
+    </application>
+
+</manifest>
